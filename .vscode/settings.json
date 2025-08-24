@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "qmainwindow": "cpp",
+        "qfiledialog": "cpp",
+        "qmouseevent": "cpp"
+    }
+}

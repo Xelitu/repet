@@ -1,0 +1,1 @@
+cmake -S .. -B target_build -D Qt5_DIR="C:/Qt/Qt5.12.1/5.12.1/msvc2017_64/lib/cmake/Qt5"

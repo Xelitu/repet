@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Configure CMake",
+            "type": "shell",
+            "command": "./configure.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "windows": {
+                "enabled": true
+            },
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "./build.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "windows": {
+                "enabled": true
+            },
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "Clear build folder",
+            "type": "shell",
+            "command": "Remove-Item -Recurse -Force target_build",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "windows": {
+                "enabled": true
+            },
+            "problemMatcher": [],
+            "group": "none"
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "./repet.exe",
+            "options": {
+                "cwd": "${workspaceFolder}/build/target_build/Debug"
+            },
+            "windows": {
+                "enabled": true
+            },
+            "problemMatcher": [],
+            "group": "none"
+        }
+    ]
+}
